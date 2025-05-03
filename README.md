@@ -27,7 +27,7 @@ Baerer Token requerido
 #### Respuesta de ejemplo
 
 ```json
-[
+
   {
     "pacienteExiste": True,
     "nombre1Paciente": "",
@@ -36,5 +36,36 @@ Baerer Token requerido
     "ciudad": "",
     "direccion": ""
   }
-]
+
+```
+
+### Endpoint: `POST api/guardarPaciente`
+
+#### Autenticación
+Baerer Token requerido
+
+#### Request de ejemplo
+
+```json
+
+  {
+    "tipoIdentificacion": "",
+	"numeroIdentificacion": "",
+    "primerNombre": "",
+	"primerApellido":"",
+	"fechaNacimiento":"1996-09-29",
+	"sexo":"M",
+	"ciudad":"",
+   	"direccion":"",
+	"correo":"",
+	"telefono":0,
+  }
+
+```
+### Response
+```
+{
+	"message":"Paciente Guardado con exito",
+	"exito": True
+}
 ```
